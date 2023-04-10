@@ -22,7 +22,7 @@ You can run the flask application with this command:
 
 Please visit http://127.0.0.1:5000/ 
 
-![Flask GUI](/flask_gui_config.jpg?raw=true "Flask GUI")
+![Flask GUI](/flask_gui.jpg?raw=true "Flask GUI")
 
 `Settings` menu: you can configure the FMC and AD parameters.  
 `AD Group Based Policy` menu : You can select the necessary AD groups.  
