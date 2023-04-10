@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} AD Groups: {% endblock %}</h1>
+     
+      <form method="post">
+        
+        <label for="ad_groups">Select the AD group(s):</label>
+
+        <select name="ad_groups" id="ad_groups" multiple>
+            {% for ad_group in ad_groups %}
+
+            <option value="{{ad_group}}">{{ ad_group }}</option>
+
+            {% endfor %}
+
+        </select>
+
+        <p>Hold down the Ctrl (windows) or Command (Mac) button to select multiple options.</p>
+
+        <br>
+        <button type="submit" name="submit_button" value="select">Select Groups!</button>
+        <br>
+        <br>
+        <label for="ad_groups">Selected AD group(s):</label>
+        {% for selected_group in selected_ad_groups %}
+        <ul>
+           <li>{{selected_group}}</li>
+        </ul>
+        {% endfor %}
+
+        <br>
+        <br>
+        <button type="submit" name="deploy_button" value="deploy">Deploy</button>
+        <br>
+
+        <br>
+        <button type="submit" name="reset_button" value="reset">Reset</button>
+        <br>
+
+
+    </form>
+
+{% endblock %}

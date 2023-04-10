@@ -1,0 +1,82 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Settings {% endblock %}</h1>
+     
+      <form method="post">
+        
+        <label for="title">FMC hostname:</label>
+        <br>
+        <input type="text" name="fmchost"
+               placeholder="fmc.mycompany.com"
+               value="{{ request.form['title'] or fmchost }}"></input>
+        <br>
+        <label for="title">FMC admin:</label>
+        <br>
+        <input type="text" name="fmcadmin"
+               placeholder="apiadmin"
+               value="{{ request.form['title'] or fmcadmin }}"></input>
+        <br>
+        <label for="title">FMC password:</label>
+        <br>
+        <input type="text" name="fmcpassword"
+               placeholder="BigSecret"
+               value="{{ request.form['title'] or fmcpassword }}"></input>
+        <br>
+        <label for="title">ACP policy name:</label>
+        <br>
+        <input type="text" name="acp_policy"
+               placeholder="PolicyName"
+               value="{{ request.form['title'] or acp_policy }}"></input>
+        <br>
+        <label for="title">ACE rule name:</label>
+        <br>
+        <input type="text" name="ace_rule_name"
+               placeholder="RuleName"
+               value="{{ request.form['title'] or ace_rule_name }}"></input>
+        <br>
+        <br>
+        
+
+        <label for="title">AD server name or IP address:</label>
+        <br>
+        <input type="text" name="ad_host"
+               placeholder="ad.mycompany.com"
+               value="{{ request.form['title'] or ad_host }}"></input>
+        <br>
+    
+        <label for="title">AD admin: </label>
+        <br>
+        <input type="text" name="ad_admin"
+               placeholder="admin"
+               value="{{ request.form['title'] or ad_admin }}"></input>
+        <br>
+    
+        <label for="title">AD password:</label>
+        <br>
+        <input type="text" name="ad_password"
+               placeholder="BigSecret"
+               value="{{ request.form['title'] or ad_password }}"></input>
+        <br>
+    
+        
+        <label for="title">AD port: </label>
+        <br>
+        <input type="number" name="ad_port"
+               value="{{ request.form['title'] or ad_port }}"></input>
+        <br>
+    
+
+        <label for="title">AD Base DN:</label>
+        <br>
+        <input type="text" name="ad_base_dn"
+               placeholder="DC=mycompany,DC=com"
+               value="{{ request.form['title'] or ad_base_dn }}"></input>
+        <br>
+       
+
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+
+{% endblock %}
