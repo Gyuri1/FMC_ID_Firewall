@@ -18,7 +18,7 @@ Please modify the `fmc_config.py` file according to Your environment and credent
 
 You can run the flask application with this command:
 
-    `python app.py`
+`python app.py`
 
 
 Please visit http://127.0.0.1:5000/ 
