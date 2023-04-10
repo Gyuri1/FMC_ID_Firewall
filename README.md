@@ -8,7 +8,7 @@ This tool can demonstrate Cisco FMC Access Control Policy (ACP) ID based firewal
 
   Copy all of the files from current repository into a working directory.    
   
-  Install the necessary python libraries:
+  Install the necessary python libraries:  
   `pip install requests`  
   `pip install flask`  
 
