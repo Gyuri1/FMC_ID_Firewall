@@ -31,7 +31,7 @@ Please visit http://127.0.0.1:5000/
 
 `Select Groups` : You can enter the necessary AD groups into the system.  
 `Deploy`: New policy will be deployed.  
-`Reset`: The policy will be modified with disabled rule.  
+`Reset`: The ACP policy will be modified with using `disabled` rule.  
 
 
 # WARNING: 
