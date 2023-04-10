@@ -14,6 +14,7 @@ This tool can demonstrate Cisco FMC Access Control Policy (ACP) ID based firewal
 
 # How to use:
 
+Please modify the `fmc_config.py` file according to Your environment and credentials!   
 
 You can run the flask application with this command:
 
