@@ -36,8 +36,8 @@ Please visit http://127.0.0.1:5000/
 
 # WARNING: 
 
-- Please review the NEW policy before deploying it!  
+- The tool will deploy the NEW policy!  
 - The script supports only ONE realm now, but multiple AD groups can be selected for a given ACP.
 - Use it at your own risk! THIS IS DEMO CODE - NO WARRANTY OR SUPPORT IS IMPLIED OR PROVIDED!  
 - PRs are welcome!   
-- It was tested with FMC 7.3 versions as well, but older releases were not tested.  
+- It was tested with FMC 7.3 version.  
